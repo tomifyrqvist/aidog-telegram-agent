@@ -1,0 +1,40 @@
+{
+  "name": "AIDog Telegram Agent",
+  "description": "A Telegram bot that uses AI to help users with various tasks through natural language conversations",
+  "version": "1.0.0",
+  "author": "Tomi Fyrqvist",
+  "license": "MIT",
+  "repository": "https://github.com/tomifyrqvist/aidog-telegram-agent",
+  "endpoints": {
+    "initialize": "https://aidog-telegram-agent.tommyfryqvist.workers.dev/initialize"
+  },
+  "provider": "Tomi Fyrqvist",
+  "contact": {
+    "github": "tomifyrqvist",
+    "discord": "tomifyrqvist"
+  },
+  "mcp_endpoint": "https://aidog-telegram-agent.tomifyrqvist.workers.dev",
+  "capabilities": {
+    "tools": [
+      {
+        "name": "telegram_bot",
+        "description": "A Telegram bot that can interact with users and provide AI-powered responses",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "description": "The message to send to the Telegram bot"
+            }
+          },
+          "required": ["message"]
+        }
+      }
+    ]
+  },
+  "type": "Standard",
+  "authentication": {
+    "type": "bearer_token",
+    "description": "Use the shared secret as a bearer token in the Authorization header"
+  }
+} 

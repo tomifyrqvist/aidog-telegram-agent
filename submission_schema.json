@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["submission_type", "mcp_endpoint", "github_username", "discord_username"],
+  "properties": {
+    "submission_type": {
+      "type": "string",
+      "enum": ["mcp_server"]
+    },
+    "mcp_endpoint": {
+      "type": "string",
+      "format": "uri"
+    },
+    "github_username": {
+      "type": "string"
+    },
+    "discord_username": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+} 

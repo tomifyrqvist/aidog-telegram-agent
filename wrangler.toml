@@ -1,0 +1,14 @@
+name = "aidog-telegram-agent"
+main = "src/index.ts"
+compatibility_date = "2025-05-03"
+
+[vars]
+SHARED_SECRET = "test-token"
+
+[[durable_objects.bindings]]
+name = "MCP_SERVER"
+class_name = "MCPServer"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["MCPServer"] 
