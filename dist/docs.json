@@ -1,0 +1,24 @@
+{
+  "MyWorker": {
+    "exported_as": "default",
+    "description": null,
+    "methods": [
+      {
+        "name": "sayHello",
+        "description": "A warm, friendly greeting from your new Workers MCP server.",
+        "params": [
+          {
+            "description": "the name of the person we are greeting.",
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "returns": {
+          "description": "the contents of our greeting.",
+          "type": "string"
+        }
+      }
+    ],
+    "statics": {}
+  }
+}

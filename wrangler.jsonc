@@ -1,0 +1,5 @@
+{
+  "name": "aidog-telegram-agent",
+  "compatibility_date": "2025-05-03",
+  "main": "src/index.ts"
+} 
